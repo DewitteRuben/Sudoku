@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" type="text/css" href="assets/css/reset.css"/>
+    <link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/screen.css" type="text/css" id="theme_css"/>
+    <meta charset="UTF-8">
+    <meta name="Group40" content="Sudoku">
+    <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport'/>
+    <title>Sudoku</title>
+</head>
+<body>
+<div id="wrapper">
+    <header>
+        <div class="logo">
+            <img src="assets/media/Logo_2.png" alt="">
+        </div>
+
+        <div class="logo logo8bit" hidden>
+            <img src="images/Sudoku-8BIT-logo.png" alt="">
+        </div>
+    </header>
+
+    <main class="main">
+        <button type="button" class="btn button-play" style="outline: none" data-target="table">PLAY</button>
+        <button type="button" class="btn button-highscore" style="outline: none">HIGHSCORE</button>
+        <button type="button" class="btn button-theme" style="outline: none">THEME</button>
+        <button type="button" class="btn button-help" style="outline: none">HELP</button>
+        <button type="button" class="btn button-about" style="outline: none">ABOUT</button>
+    </main>
+
+    <main class="hidden theme">
+        <div class="back back-theme">
+            <img src="assets/media/ArrowLeft.png" alt="">
+        </div>
+        <button type="button" class="btn button-themes" data-theme="normal" style="outline: none" data-target="table">NORMAL</button>
+        <button type="button" class="btn button-themes" data-theme="8bit" style="outline: none" data-target="table">8-BIT</button>
+        <button type="button" class="btn button-themes" data-theme="sand" style="outline: none" data-target="table">SAND</button>
+        <button type="button" class="btn button-themes" data-theme="stonehenge" style="outline: none" data-target="table">STONEHENGE</button>
+        <button type="button" class="btn button-themes" data-theme="stones" style="outline: none" data-target="table">STONES</button>
+
+    </main>
+
+    <article class="hidden about">
+        <div class="back back-About">
+            <img src="assets/media/ArrowLeft.png" alt="">
+        </div>
+        <h1>About us</h1>
+        <p>We are a group of highly skilled programmers who have a passion for sudoku. Just kidding, this is a school
+            assignment.</p>
+        <p>Our team consists of 4 members, Ruben our Back-end developer, Brent the graphic designer and two Front-end
+            developers Wolker and Thomas. This doesn't mean that we only did our job, everybody helped on all ends. </p>
+        <p>We hope you enyoy or website!!</p>
+        <p>Sincerely The Black Sheep</p>
+        <img src="images/group-photo.jpg" title="The Black Sheep" alt="The Black Sheep">
+    </article>
+
+    <article class="hidden help">
+        <div class="back back-help">
+            <img src="assets/media/ArrowLeft.png" alt="">
+        </div>
+        <h1>HELP</h1>
+
+        <h2>How to solve a sudoku:</h2>
+
+        <h3>Rules</h3>
+        <p>
+            A normal sudoku is a 9 by 9 square. The objective of the puzzle is to put the numbers 1 trough 9 in every
+            row, column and 3 by 3 square block. These numbers can't be repeated.
+            The same rules apply to smaller or larger sudokus, but the amount of numbers to fill in is the same number
+            as the length of each row or column.
+        </p>
+        <h3>How to start</h3>
+
+        <div class="row">
+            <div class="col-sm-2">
+                <div class="help-image">
+                    <img src="images/example1.gif" title="example 1" alt="example 1" class="help-sudoku">
+                </div>
+
+            </div>
+            <div class="col-sm-3"></div>
+            <div class="col-sm-5">
+                <p>
+                    A good way to start is looking at a 3 by 3 block and eliminating possibilities. if you look at the
+                    blue box, you can see that the numbers 1,2,3,5 and 9 are yet to be filled in.
+                </p>
+            </div>
+            <div class="col-sm-2"></div>
+
+        </div>
+
+        <div class="row">
+            <div class="col-sm-2">
+                <div class="help-image">
+                    <img src="images/example2.gif" title="example 2" alt="example 2" class="help-sudoku">
+                </div>
+            </div>
+            <div class="col-sm-3"></div>
+            <div class="col-sm-5">
+                <p>
+                    If we take the number 2 for example, we can rule out the top and middle row because there is already
+                    a number 2 in those rows. So we know that the number 2 has to be inserted in the bottom row.
+                </p>
+            </div>
+            <div class="col-sm-2"></div>
+        </div>
+
+
+        <p>
+            The same method can be used for rows and columns. Find out which numbers are not filled in yet and look in
+            the same rows, columns and 3 by 3 blocks if you can eliminate some numbers.
+        </p>
+
+        <p>
+            If you are stuck you can always use the note function. That way you can fill in all possible numbers
+            temporarily until you are sure it is the right number.
+        </p>
+    </article>
+
+
+    <footer>
+        <p> © copyright by The black Sheep, Programming project Howest Brugge</p>
+    </footer>
+</div>
+
+
+<script type="text/javascript" src="assets/js/jquery-3.1.1.min.js"></script>
+<script type="text/javascript" src="assets/js/script.js"></script>
+<script type="text/javascript" src="assets/js/themeSetup.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
+        integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+        crossorigin="anonymous"></script>
+</body>
+</html>

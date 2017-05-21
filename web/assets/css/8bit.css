@@ -1,0 +1,190 @@
+/*---------------------*/
+/*   MAINPAGE BUTTONS  */
+/*---------------------*/
+
+.btn {
+    display: block;
+    margin-bottom: 10px;
+    margin-top: 20px;
+    width: 100%;
+    color: #959595;
+    border-color: #181835;
+
+    background-size: cover;
+
+    background-image: url("../../images/background4.png");
+    background-repeat: no-repeat;
+
+    border-radius: 20px;
+
+}
+
+
+/*---------------------*/
+/*   MAINPAGE STYLE    */
+/*---------------------*/
+body{
+
+
+    background: url("../../images/8bit.png") no-repeat center center fixed;
+    background-size: cover;
+    font-family: 'Press Start 2P', cursive;
+
+    color: #808080;
+    font-size: 20px;
+}
+header{
+    margin-top: 10px;
+
+}
+
+#wrapper {
+    min-height: 100%;
+
+}
+main {
+    width: 25%;
+    margin-left: auto;
+    margin-right: auto;
+
+    padding-top: 5%;
+}
+
+footer {
+    color: #464646;
+
+    padding-top: 1%;
+    padding-bottom: 1%;
+
+    margin-top : 15%;
+
+    bottom : 2px;
+    height : 40px;
+
+    text-align: center;
+    vertical-align: middle;
+
+    width:100%;
+
+    font-size: 15px;
+
+
+}
+
+footer p{
+    border-top: solid thin;
+    border-color: #808080;
+
+    padding-top: 15px;
+
+    margin-left: 15%;
+    margin-right: 15%;
+}
+
+
+
+.logo {
+    width: 40%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.logo img {
+    width: 100%;
+}
+
+.back img{
+    width: 16px;
+    height: 24px;
+    float: left;
+    margin-left: 10px;
+    margin-top: 28px;
+}
+.back:hover{
+    cursor: pointer;
+}
+/*---------------------*/
+/*      ABOUT PAGE     */
+/*---------------------*/
+
+article{
+    width: 75%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 2%;
+    margin-top: 5%;
+    border: 1px solid #808080;
+    border-radius: 15px;
+    background-color: white;
+}
+
+
+body .help{
+    width: 75%;
+}
+
+article img{
+    width: 100%;
+}
+
+article h1{
+    text-align: center;
+    border-bottom: solid thin;
+    border-color: #808080;
+
+    margin-right: 15%;
+    margin-left: 15%;
+}
+
+
+/*---------------------*/
+/*      HELP PAGE      */
+/*---------------------*/
+
+body .help{
+    width: 40%;
+}
+.help-image{
+    text-align: center;
+    margin-bottom: 10px;
+    display: block;
+    /*float: left;*/
+}
+
+.help-sudoku{
+    max-width: 220px;
+    min-width: 220px;
+}
+
+
+
+/*---------------------*/
+/*   REUSABLE CLASSES  */
+/*---------------------*/
+.hidden{
+    display: none;
+}
+
+/*---------------------*/
+/*       MOBILE        */
+/*---------------------*/
+
+@media only screen and (max-device-width: 500px) {
+    .logo {
+        width: 80%;
+    }
+    main{
+        width: 50%;
+        padding-top: 20%;
+    }
+    body .help{
+        width: 70%;
+    }
+    .help-sudoku{
+        min-width: 1px;
+    }
+}
+
+
+
+

@@ -1,0 +1,875 @@
+/*---------------------*/
+/*   MAINPAGE STYLE    */
+/*---------------------*/
+
+body{
+    background-color: #f7f7f7;
+    font-family: Arial, Verdana, sans-serif;
+    color: #808080;
+}
+header{
+    margin-top: 10px;
+
+}
+
+#wrapper {
+    min-height: 100%;
+
+}
+
+h1{
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+main {
+    width: 75%;
+    margin-left: auto;
+    margin-right: auto;
+
+    padding-top: 5%;
+}
+
+footer {
+    color: #808080;
+
+    padding-top: 1%;
+    padding-bottom: 1%;
+
+    margin-top : 15px;
+
+    bottom : 2px;
+    height : 40px;
+
+    text-align: center;
+    vertical-align: middle;
+
+    width:100%;
+}
+
+footer p{
+    border-top: solid thin;
+    border-color: #808080;
+
+    margin-left: 15%;
+    margin-right: 15%;
+}
+
+.logo {
+    width: 40%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.logo img {
+    width: 100%;
+}
+
+.back img{
+    width: 16px;
+    height: 24px;
+    float: left;
+    margin-left: 10px;
+    margin-top: 28px;
+}
+.back:hover{
+    cursor: pointer;
+}
+
+
+/*---------------------*/
+/*   MAIN BUTTONS      */
+/*---------------------*/
+
+nav {
+    display: block;
+    margin-bottom:8px;
+    list-style-type: none;
+    overflow: hidden;
+    border-bottom:solid thin
+}
+
+nav li:first-child {
+    float:left;
+    margin-bottom:10px;
+}
+
+nav ul li:not(:first-child) { 
+    list-style:none;
+    float: right;
+    margin-left:10px;
+    margin-bottom:10px;
+}
+
+nav li a {
+    display: block;
+    text-align: center;
+
+    text-decoration: none;
+}
+
+.backArrow {
+    background:url(../media/ArrowLeft.png) no-repeat 0px 0px;
+    background-size: 16px 24px;
+    margin-left: 10px;
+    margin-top: 10px;
+    padding: 13px 10px;
+    float:left;
+    cursor: pointer;
+}
+
+.backHome {
+    background:url(../media/home.png) no-repeat 0px 0px;
+    background-size: 33px 28px;
+    padding: 14px 16px;
+    cursor: pointer;
+}
+
+.hints {
+    background: url(../media/hints.png) no-repeat 0px 0px;
+    cursor: pointer;
+    background-size: 25px 21px;
+    padding-top: 11px;
+    padding-right: 7px;
+    padding-bottom: 11px;
+    padding-left: 16px;
+    margin-top: 4px;
+}
+
+.pauseButton {
+
+    background:url(../media/PuaseKnop.png) no-repeat 0px 0px;
+    cursor: pointer;
+    background-size: 20px 20px;
+    margin-top:5px;
+    padding: 10px 13px;
+}
+
+.refresh {
+    background:url(../media/refresh.png) no-repeat 0px 0px;
+    cursor: pointer;
+    background-size: 32px 31px;
+    padding: 14px 16px;
+}
+
+.options {
+    margin-top: 3px;
+    color: grey;
+    text-decoration:none;
+    font-size: 21px;
+}
+
+/*---------------------*/
+/*   COLOR CLASSES     */
+/*---------------------*/
+
+.highlight {
+    background-color:yellow !important;
+}
+
+/*---------------------*/
+/*  NUMPAD BUTTONS     */
+/*---------------------*/
+
+.numPad {
+    display:inline-block;
+    float:right;
+}
+
+.numPad table {
+    border: 0;
+    table-layout: fixed;
+    margin-left:40px;
+    width: 120px;
+}
+
+.btnNumpad{
+    background-color: white;
+    color: #808080;
+    font-weight: bold;
+    text-align: center;
+    vertical-align: middle;
+    font-size: 19px;
+    padding: 14px;
+    height: 20px;
+    cursor: pointer;
+}
+
+.numPadMobile{
+    margin-top:25px;
+    display:none;
+}
+
+.numPadMobile table {
+    border:0;
+    width:90%;
+    margin-left:auto;
+    margin-right:auto;
+    table-layout: fixed;
+}
+
+.numPadMobileLandscape {
+    display:none;
+    float:right;
+}
+
+.numPadMobileLandscape table {
+    border: 0;
+    table-layout: fixed;
+    margin-left:30px;
+    width: 160px;
+}
+
+.btnNumpad:hover{
+    background-color: #f9eee2;
+}
+
+#scoreTimer {
+    display:inline;
+}
+
+#valueHints {
+    text-align:center;
+}
+
+/*---------------------*/
+/*   TABLE LAYOUT      */
+/*---------------------*/
+
+#gameGrid {
+    float:left;
+}
+
+#gameGrid table {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.blackOverlay {
+    position: relative;
+}
+
+.blackOverlay:after {
+    content: " ";
+    z-index: 10;
+    display: block;
+    position: absolute;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: url("https://osuskinner.com/uploads/519/pause-overlay/3994.png") no-repeat;
+    background-size:100% 100%;
+}
+
+table{
+    border-top: black solid 2px;
+    border-left: black solid 2px;
+}
+
+table td {
+    border: #666666 solid 1px;
+}
+
+table input {
+    width: 65px;
+    height: 65px;
+    font-size: 31px;
+    text-align: center;
+    border:0;
+    box-shadow:none;
+    -webkit-appearance: none;
+}
+
+tr.borderBottom {
+    border-bottom: black solid 2px;
+}
+
+td.borderRight {
+    border-right: black solid 2px;
+}
+
+.disabledCell {
+    background-color:white;
+    color:black;
+}
+
+.cell{
+    color:#0011FF;
+}
+
+.hint{
+    background-color:yellow !important;
+}
+
+.position {
+    position:relative;
+}
+
+.notes {
+    font-size: 9px;
+    font-weight: bold;
+    font-family: "Tahoma";
+    width: 9px;
+    height: 8px;
+    display: inline-block;
+    float: left;
+    color:red;
+
+}
+
+
+.noteContainer {
+    /*TODO make passthrough work on IE9 ect*/
+    overflow:visible;
+    pointer-events:none;
+    position: absolute;
+    padding:1px;
+    height: 100%;
+    text-align: center;
+}
+
+/*---------------------*/
+/*         BUTTONS     */
+/*---------------------*/
+
+.btn{
+    background-color: white;
+
+    color: #808080;
+    font-size: 20px;
+
+    border-radius: 5px;
+    border: 1px solid #808080;
+
+    padding: 15px;
+
+    margin: 10px;
+
+    cursor:  pointer;
+
+    outline: none;
+}
+
+.right{
+    float: right;
+}
+
+.left{
+    float: left;
+
+}
+
+.gameContainer {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2%;
+    width: 65%;
+}
+
+/*---------------------*/
+/*   POPUP SCREEN      */
+/*---------------------*/
+
+.modal-title{
+    width: 100%;
+
+}
+
+.modal-body{
+    text-align: center;
+
+}
+.modal-body h4{
+    font-size: 3rem;
+    color: #808080;
+
+    border-bottom: 1px solid #e5e5e5;
+
+    margin-right: 15%;
+    margin-left: 15%;
+}
+
+.modal-body button{
+    display: block;
+
+    outline: none;
+
+    font-size: 2rem;
+    color: #808080;
+
+    border: solid thin;
+    border-color: #808080;
+    border-radius: 5px;
+
+    background-color: #f7f7f7;
+
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5%;
+    margin-bottom: 5%;
+
+    padding-right: 10%;
+    padding-left: 10%;
+    padding-top: 1%;
+    padding-bottom: 1%;
+}
+
+.modal-footer{
+    text-align: center;
+
+}
+
+/*---------------------*/
+/*   HELP SCREEN       */
+/*---------------------*/
+
+.help-header{
+
+    border-bottom: 1px solid #e5e5e5;
+
+    margin-right: 15%;
+    margin-left: 15%;
+
+}
+.help-header h4{
+    font-size: 30px;
+    color: #808080;
+
+    text-align: center;
+
+    margin-top: -25px;
+}
+
+.help-body{
+    margin-left: 10%;
+    margin-right: 10%;
+
+}
+
+
+.help-footer{
+    border-top: 1px solid #e5e5e5;
+
+    text-align: center;
+}
+.help-image {
+    text-align: center;
+    margin-bottom: 25px;
+    display: block;
+}
+.backToPause {
+    width: 16px;
+    height: 24px;
+
+    margin-top: 35px;
+
+    cursor: pointer;
+
+}
+.help-container{
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.help-container p{
+    text-align: justify;
+}
+/*---------------------*/
+/*    SETTINGS PAGE    */
+/*---------------------*/
+
+section.settingsPage{
+    width: 35%;
+    min-width: 20%;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 5%;
+    text-align: center;
+    border: 1px solid #808080;
+    border-radius: 15px;
+    background-color: white;
+}
+
+h1{
+    font-size: 2rem;
+    text-align: center;
+    margin: 10px 15% 20px;
+    padding-bottom: 1%;
+    border-bottom: 1px solid #808080;
+}
+h1+label{
+    display: block;
+    margin-bottom: 20px;
+}
+
+.back img{
+    width: 16px;
+    height: 24px;
+    float: left;
+    margin-left: 10px;
+    margin-top: 5px;
+}
+.back:hover{
+    cursor: pointer;
+}
+
+/*---------------------*/
+/*   SETTINGS BUTTONS  */
+/*---------------------*/
+input[type=button]{
+    border: 1px black solid;
+    width: 60px;
+    height: 60px;
+    display: inline-block;
+    color: #808080;
+    background-color: #f7f7f7;
+    margin-bottom: 20px;
+    margin-right: 10px;
+    outline: none;
+}
+
+input[type=button]:hover{
+    cursor: pointer;
+    color: #333;
+}
+input[type=button].active{
+    background-color: black;
+    color: white;
+    outline: none;
+}
+
+select{
+    background-color: #f7f7f7;
+    margin-left: 100px;
+    width: 100px;
+    margin-bottom: 20px;
+    color: #808080;
+}
+
+select:hover{
+    color: #333;
+}
+
+.play-settings{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+    text-decoration: none;
+    width: 200px;
+    color: #808080;
+    background-color: #f7f7f7;
+    border: 1px solid #808080;
+    border-radius: 3px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+}
+
+.play-settings:hover{
+    color: #333;
+    text-decoration: none;
+}
+.play-settings:focus{
+    color: #808080;
+    text-decoration: none;
+}
+
+
+/*---------------------*/
+/*    CONGRATS PAGE    */
+/*---------------------*/
+
+.btn {
+    margin-bottom: 10px;
+    margin-top: 20px;
+    color: #808080;
+    background-color: white;
+    border-color: #808080;
+    display: inline-block;
+    margin-left: auto;
+}
+.congrats{
+    width: 30%;
+    min-width: 20%;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 5%;
+    border: 1px solid #808080;
+    border-radius: 15px;
+    background-color: white;
+}
+.congrats-header{
+    text-align: center;
+}
+.congrats-header h1{
+    font-weight: bold;
+}
+.congrats-body p{
+    font-weight: bold;
+}
+.congrats input[type=text]{
+    margin-right: 45%;
+}
+.congrats input[type=text], label{
+    display: inline-block;
+}
+.form-placement{
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    width: 90%;
+}
+
+/*---------------------*/
+/*  REUSABLE CLASSES   */
+/*---------------------*/
+
+.hidden{
+    display: none;
+}
+
+/* ClearFix Hack*/
+.cf:before,
+.cf:after {
+    content: " ";
+    display: table;
+}
+
+.cf:after {
+    clear: both;
+}
+
+.cf {
+    *zoom: 1;
+}
+
+
+/*---------------------*/
+/*     MOBILE PAGE     */
+/*---------------------*/
+
+
+/* Fix bootstrap container width*/
+@media (min-width: 768px) {
+    .container {
+        width:768px;
+        text-align:center;
+    }
+
+    #gameGrid {
+        display:inline-block;
+        margin:0 auto;
+        float: none;
+    }
+}
+
+@media(min-width:900px) {
+    .container {
+        width:950px;
+    }
+}
+
+
+@media only screen and (min-width: 1200px) {
+    section.settingsPage {
+        width:30%;
+    }
+}
+
+@media (min-width: 1920px) {
+    .container {
+        width:1250px;
+    }
+}
+/* Fix bootstrap container width*/
+
+
+@media only screen and (max-width: 2560px) {
+
+    table input {
+        width: 70px;
+        height: 70px;
+        font-size: 31px;      
+    }
+}
+
+@media only screen and (max-width: 1920px) {
+
+    table input {
+        width: 50px;
+        height: 49px;
+    }
+
+    .notes {
+        font-size: 15px;
+        width: 15px;
+        height: 14px;
+    }
+
+    .twelveByTwelveNotes {
+        font-size: 13px;
+        font-weight: bold;
+        font-family: monospace;
+        width: 16px;
+        height: 10px;
+        display: inline-block;
+        float: left;
+    }
+}
+
+@media only screen and (max-width: 1366px) {
+
+    footer, .logo {
+        display:none;
+    }
+
+}
+
+@media only screen and (max-width: 900px) {
+    #gameGrid {
+        float: none;
+    }
+
+    .numPadMobile {
+        display:inline-block;
+    }
+
+    .numPad {
+        display:none;
+    }
+
+    /*--settings--*/
+
+    section.settingsPage{
+        width: 95%;
+    }
+
+    select{
+        margin-left: 15px;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+
+    /*--Main buttons--*/
+
+    .score{
+        padding-right: 63px;
+    }
+
+    .backHome img{
+        width: 29px;
+        height: 25px;
+    }
+
+    .refresh img{
+        width: 27px;
+        height: 26px;
+    }
+
+    .pauseButton img{
+        width: 19px;
+        height: 18px;
+    }
+
+
+    /*--Table--*/
+
+    table input{
+        width: 34px;
+        height: 34px;
+        font-size: 1.4em;
+    }
+
+    table tr td{
+        border: solid thin;
+    }
+
+
+    /*--BUTTONS (0-9)--*/
+
+    .cf{
+        text-align: -webkit-center;
+    }
+
+    /* remove logo & footer on phone*/
+    footer, .logo {
+        display:none;
+    }
+
+    .notes {
+        font-size: 10px;
+        width: 9px;
+        height: 8px;
+    }
+}
+/*---------------------*/
+/*  HINT LAYOUT        */
+/*---------------------*/
+
+@media only screen and (max-width:768px) 
+and (min-width:560px) and (min-height:320px) and (max-height:420px) {
+    .numPad, .numPadMobile {
+        display:none;
+    }
+    nav {
+        display:none;
+    }
+
+    table input {
+        font-size:20px;
+        width:25px;
+        height:25px;
+    }
+
+
+    .container {
+        width:540px;
+    }
+
+    .numPadMobileLandscape {
+        display:inline-block;
+    } 
+
+    #gameGrid {
+        float: left;
+    }
+
+    .notes {
+        font-size: 8px;
+        width: 7px;
+        height: 7px;
+    }
+
+}
+
+@media only screen and (max-width: 500px) {
+    .twelveByTwelveNotes {
+        font-size: 7px;
+        font-weight: bold;
+        font-family: monospace;
+        width: 5px;
+        height: 7px;
+        display: inline-block;
+        float: left;
+    }
+
+    .twelveByTwelveInput {
+        width: 23px;
+        height: 23px;
+        font-size: 1.1em;
+    }
+}
+
+@media only screen and (max-width: 375px) {
+    table input{
+        width: 30px;
+        height: 30px;
+        font-size: 1.4em;
+    }
+
+
+
+}
