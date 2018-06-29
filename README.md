@@ -3,6 +3,9 @@
 Wanneer je op de hoofdpagina bent heb je de keuze om op 5 knoppen te drukken, Play, Highscore, Theme, Help en About. 
 Hieronder worden deze onderdelen meer in detail besproken.
 
+# Start #
+Make sure to change the endpoint in the bridge.js file so it corresponds with the URL the site launches at.
+
 # Play #
 Wanneer je op play klikt wordt je doorgestuurd naar een settings pagina. Deze pagina geeft je de optie om een type sudoku te kiezen.
 De keuzes zijn 4x4, 6x6, 9x9 en 12x12. Vervolgens een optie om de moeilijkheidsgraad in te stellen. 
